@@ -80,7 +80,7 @@ The easiest way to get Mix Flip Continuity Manager is using the pre-compiled APK
 To build the APK locally:
 
 ```bash
-git clone https://github.com/your-username/MixFlipContinuityManager.git
+git clone https://github.com/sergeron/MixFlipContinuityManager.git
 cd MixFlipContinuityManager
 ./gradlew assembleRelease
 ```
