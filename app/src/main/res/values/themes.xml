@@ -1,0 +1,6 @@
+<resources>
+    <style name="Theme.FlipContinuity" parent="Theme.Material3.DayNight.NoActionBar">
+        <item name="android:statusBarColor">?attr/colorSurface</item>
+        <item name="android:windowLightStatusBar">true</item>
+    </style>
+</resources>

@@ -1,0 +1,33 @@
+*.iml
+.gradle
+/local.properties
+/.idea/
+.DS_Store
+/build
+/captures
+.externalNativeBuild
+.cxx
+local.properties
+*.apk
+*.ap_
+*.aab
+
+# Built application files
+app/build/
+
+# Android Studio Navigation editor temp files
+.navigation/
+
+# Log files
+*.log
+
+# Android Studio profiler
+*.hprof
+
+# Kotlin
+.kotlin/
+
+# Scratch & dumps
+*.png
+*.xml_dump
+window_dump*.xml

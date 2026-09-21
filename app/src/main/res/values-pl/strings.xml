@@ -1,0 +1,95 @@
+<resources>
+    <string name="app_name">Mix Flip Continuity Manager</string>
+    <string name="toolbar_title">Mix Flip Continuity</string>
+    <string name="shizuku_title">Shizuku</string>
+    <string name="grant_permission">Uprawnienia</string>
+    <string name="refresh">Odśwież</string>
+    <string name="checking">Sprawdzanie…</string>
+    <string name="cancel">Anuluj</string>
+
+    <!-- Shizuku statuses -->
+    <string name="shizuku_waiting">Oczekiwanie na połączenie z Shizuku…</string>
+    <string name="shizuku_requires_auth">Uruchomione (wymaga autoryzacji)</string>
+    <string name="shizuku_connect_refresh">Połącz / Odśwież</string>
+    <string name="shizuku_grant_btn">Nadaj uprawnienia</string>
+    <string name="shizuku_active">Aktywne (połączono z powłoką UID 2000)</string>
+    <string name="shizuku_lost_connection">Utracono połączenie z Shizuku</string>
+    <string name="shizuku_perm_granted">Uprawnienie Shizuku przyznane!</string>
+    <string name="shizuku_perm_denied">Uprawnienie Shizuku zostało odrzucone.</string>
+    <string name="shizuku_not_available">Brak połączenia z Shizuku. Upewnij się, że Shizuku działa i zezwól na autoryzację w aplikacji Shizuku.</string>
+    <string name="shizuku_connected_authorized">Shizuku jest połączone i autoryzowane.</string>
+    <string name="shizuku_required_toast">Wymagane uprawnienie Shizuku.</string>
+
+    <!-- Tabs -->
+    <string name="tab_continuity">Ciągłość (Flip)</string>
+    <string name="tab_cover_screen">Ekran zewnętrzny</string>
+
+    <!-- Tab 0: Continuity -->
+    <string name="global_continuity">Globalne Continuity</string>
+    <string name="global_continuity_desc">flip_continuity_enabled w system settings. Pozwala na kontynuację po zamknięciu klapki.</string>
+    <string name="global_continuity_on">Globalne continuity włączone</string>
+    <string name="global_continuity_off">Globalne continuity wyłączone</string>
+    <string name="continuity_app_enabled">%1$s: ciągłość włączona</string>
+    <string name="continuity_app_disabled">%1$s: ciągłość wyłączona</string>
+    <string name="app_count_continuity">%1$d aplikacji (%2$d z ciągłością)</string>
+
+    <!-- Tab 1: Cover Screen -->
+    <string name="cover_screen_card_title">Wyświetlanie na ekranie zewnętrznym</string>
+    <string name="cover_screen_card_desc">Zezwalaj aplikacjom na uruchamianie i wyświetlanie na małym zewnętrznym ekranie Xiaomi MIX Flip.</string>
+    <string name="btn_enable_all_cover">Włącz wszystkie</string>
+    <string name="btn_apply_saved_cover">Zastosuj po restarcie</string>
+    <string name="btn_disable_all_cover">Wyłącz wszystkie</string>
+    <string name="check_scale_optimizations">Optymalizuj skalowanie (kalkulator, kontakty)</string>
+    <string name="cover_screen_app_enabled">%1$s: ekran zewnętrzny włączony</string>
+    <string name="cover_screen_app_disabled">%1$s: ekran zewnętrzny wyłączony</string>
+    <string name="app_count_cover">%1$d aplikacji (%2$d na zewnątrz)</string>
+    <string name="batch_enabling">Włączanie na ekranie zewnętrznym (%1$d aplikacji)…</string>
+    <string name="batch_enabling_progress">Włączanie uprawnień: %1$d / %2$d</string>
+    <string name="batch_enable_success">Włączono uprawnienia ekranu zewnętrznego dla %1$d aplikacji!</string>
+    <string name="batch_applying_saved">Przywracanie uprawnień (%1$d aplikacji)…</string>
+    <string name="batch_applying_progress">Przywracanie uprawnień: %1$d / %2$d</string>
+    <string name="batch_apply_saved_empty">Brak zapisanych aplikacji do przywrócenia. Użyj \'Włącz wszystkie\' lub wybierz aplikacje z listy.</string>
+    <string name="batch_apply_saved_success">Przywrócono uprawnienia dla %1$d aplikacji po restarcie!</string>
+    <string name="batch_disabling">Wyłączanie aplikacji na ekranie zewnętrznym…</string>
+    <string name="batch_disabling_progress">Wyłączanie uprawnień: %1$d / %2$d</string>
+    <string name="batch_disable_success">Wyłączono uprawnienia ekranu zewnętrznego dla %1$d aplikacji.</string>
+
+    <!-- App list & search -->
+    <string name="search_hint">Szukaj aplikacji lub pakietu…</string>
+    <string name="show_system_apps">Pokaż aplikacje systemowe</string>
+    <string name="no_apps_found">Brak aplikacji do wyświetlenia</string>
+    <string name="error_loading_apps">Błąd podczas pobierania listy aplikacji: %1$s</string>
+
+    <!-- Toolbar Menu -->
+    <string name="menu_continuity_db">Baza ContinuityProvider</string>
+    <string name="menu_help">Instrukcja</string>
+
+    <!-- Database dialog -->
+    <string name="db_dialog_title">Baza ContinuityProvider</string>
+    <string name="db_loading_records">Odczytywanie rekordów z bazy…</string>
+    <string name="db_summary">Łącznie rekordów: %1$d (%2$d aktywnych, %3$d wyłączonych)</string>
+    <string name="db_empty_message">Baza ContinuityProvider jest pusta.\n(Brak wpisów w tabeli packages)</string>
+    <string name="btn_clear_disabled_db">Usuń nieaktywne</string>
+    <string name="db_badge_active">enable=1 (Aktywne)</string>
+    <string name="db_badge_disabled">enable=0 (Wyłączone)</string>
+    <string name="db_delete_confirm_title">Usunąć rekord z bazy?</string>
+    <string name="db_delete_confirm_msg">Aplikacja: %1$s\nPakiet: %2$s\nStan: %3$s\n\nRekord zostanie całkowicie usunięty z tabeli packages w ContinuityProvider.</string>
+    <string name="db_delete_btn">Usuń trwale</string>
+    <string name="db_delete_success">Usunięto rekord: %1$s</string>
+    <string name="db_clear_disabled_title">Usunąć nieaktywne rekordy?</string>
+    <string name="db_clear_disabled_msg">Znaleziono %1$d wyłączonych rekordów (enable=0). Aktywne aplikacje (np. YouTube) pozostaną nienaruszone.\n\nCzy usunąć wszystkie wyłączone rekordy?</string>
+    <string name="db_clear_disabled_btn">Wyczyść (%1$d)</string>
+    <string name="db_clear_disabled_none">Brak nieaktywnych rekordów (enable=0) do usunięcia.</string>
+    <string name="db_clear_disabled_success">Usunięto %1$d wyłączonych rekordów z bazy.</string>
+
+    <!-- Onboarding / Guide -->
+    <string name="guide_title">Jak to działa?</string>
+    <string name="guide_subtitle">Wykonaj poniższe 3 proste kroki, aby skonfigurować Xiaomi MIX Flip:</string>
+    <string name="guide_step1_title">Krok 1: Shizuku (Wymagane)</string>
+    <string name="guide_step1_desc">Shizuku musi być uruchomione i mieć przyznane uprawnienia dla tej aplikacji. Umożliwia to bezpośrednią komunikację z mechanizmami HyperOS na poziomie powłoki ADB (UID 2000) bez roota.</string>
+    <string name="guide_step2_title">Krok 2: Ekran zewnętrzny (Zakładka 2)</string>
+    <string name="guide_step2_desc">Zanim aplikacja będzie mogła działać na małym ekranie, MUSISZ ją zezwolić w zakładce \'Ekran zewnętrzny\' (możesz użyć \'Włącz wszystkie\' lub przełączać pojedynczo).\n\n⚠️ Ważne: HyperOS czyści tę listę po restarcie telefonu. Jeśli po restarcie aplikacje znikną z zewnętrznego ekranu, wystarczy otworzyć aplikację i kliknąć \'Zastosuj po restarcie\'!</string>
+    <string name="guide_step3_title">Krok 3: Ciągłość (Flip) (Zakładka 1)</string>
+    <string name="guide_step3_desc">Upewnij się, że \'Globalne Continuity\' jest włączone na samej górze, a następnie włącz przełączniki przy aplikacjach, które mają płynnie kontynuować działanie po zamknięciu klapki Mix Flipa.</string>
+    <string name="guide_btn_got_it">Rozumiem!</string>
+</resources>

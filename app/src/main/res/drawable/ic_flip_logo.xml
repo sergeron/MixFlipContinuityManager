@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="28dp"
+    android:height="28dp"
+    android:viewportWidth="28"
+    android:viewportHeight="28">
+
+    <!-- Closed Flip Outer Body -->
+    <path
+        android:fillColor="#1E293B"
+        android:strokeColor="#64748B"
+        android:strokeWidth="1"
+        android:pathData="M5,4 h18 c2.2,0 4,1.8 4,4 v12 c0,2.2 -1.8,4 -4,4 h-18 c-2.2,0 -4,-1.8 -4,-4 v-12 c0,-2.2 1.8,-4 4,-4 Z" />
+
+    <!-- Cover Screen -->
+    <path
+        android:fillColor="#0B0F19"
+        android:strokeColor="#0284C7"
+        android:strokeWidth="0.8"
+        android:pathData="M6.5,5.5 h15 c1.5,0 2.5,1 2.5,2.5 v9 c0,1.5 -1,2.5 -2.5,2.5 h-15 c-1.5,0 -2.5,-1 -2.5,-2.5 v-9 c0,-1.5 1,-2.5 2.5,-2.5 Z" />
+
+    <!-- Dual camera circles on the cover screen -->
+    <path
+        android:fillColor="#334155"
+        android:pathData="M20,9 m-1.8,0 a1.8,1.8 0 1,0 3.6,0 a1.8,1.8 0 1,0 -3.6,0" />
+    <path
+        android:fillColor="#38BDF8"
+        android:pathData="M20,9 m-0.8,0 a0.8,0.8 0 1,0 1.6,0 a0.8,0.8 0 1,0 -1.6,0" />
+
+    <path
+        android:fillColor="#334155"
+        android:pathData="M20,14 m-1.8,0 a1.8,1.8 0 1,0 3.6,0 a1.8,1.8 0 1,0 -3.6,0" />
+    <path
+        android:fillColor="#38BDF8"
+        android:pathData="M20,14 m-0.8,0 a0.8,0.8 0 1,0 1.6,0 a0.8,0.8 0 1,0 -1.6,0" />
+
+    <!-- Continuity loop on screen -->
+    <path
+        android:fillColor="#00000000"
+        android:strokeColor="#38BDF8"
+        android:strokeWidth="1.2"
+        android:strokeLineCap="round"
+        android:pathData="M10,14 A2.8,2.8 0 1,1 14,14" />
+    <path
+        android:fillColor="#38BDF8"
+        android:pathData="M9.5,13 L11,14.5 L8.5,15.5 Z" />
+
+</vector>

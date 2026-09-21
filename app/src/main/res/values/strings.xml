@@ -1,0 +1,95 @@
+<resources>
+    <string name="app_name">Mix Flip Continuity Manager</string>
+    <string name="toolbar_title">Mix Flip Continuity</string>
+    <string name="shizuku_title">Shizuku</string>
+    <string name="grant_permission">Permissions</string>
+    <string name="refresh">Refresh</string>
+    <string name="checking">Checking…</string>
+    <string name="cancel">Cancel</string>
+
+    <!-- Shizuku statuses -->
+    <string name="shizuku_waiting">Waiting for Shizuku connection…</string>
+    <string name="shizuku_requires_auth">Running (authorization required)</string>
+    <string name="shizuku_connect_refresh">Connect / Refresh</string>
+    <string name="shizuku_grant_btn">Grant permissions</string>
+    <string name="shizuku_active">Active (connected to shell UID 2000)</string>
+    <string name="shizuku_lost_connection">Lost connection to Shizuku</string>
+    <string name="shizuku_perm_granted">Shizuku permission granted!</string>
+    <string name="shizuku_perm_denied">Shizuku permission was denied.</string>
+    <string name="shizuku_not_available">No connection to Shizuku. Make sure Shizuku is running and authorize Flip Continuity Manager.</string>
+    <string name="shizuku_connected_authorized">Shizuku is connected and authorized.</string>
+    <string name="shizuku_required_toast">Shizuku permission is required.</string>
+
+    <!-- Tabs -->
+    <string name="tab_continuity">Continuity (Flip)</string>
+    <string name="tab_cover_screen">Outer Screen</string>
+
+    <!-- Tab 0: Continuity -->
+    <string name="global_continuity">Global Continuity</string>
+    <string name="global_continuity_desc">flip_continuity_enabled in system settings. Allows continuing apps after closing the flip.</string>
+    <string name="global_continuity_on">Global continuity enabled</string>
+    <string name="global_continuity_off">Global continuity disabled</string>
+    <string name="continuity_app_enabled">%1$s: continuity enabled</string>
+    <string name="continuity_app_disabled">%1$s: continuity disabled</string>
+    <string name="app_count_continuity">%1$d apps (%2$d with continuity)</string>
+
+    <!-- Tab 1: Cover Screen -->
+    <string name="cover_screen_card_title">Outer Screen Display</string>
+    <string name="cover_screen_card_desc">Allow applications to launch and run on Xiaomi MIX Flip\'s outer cover screen.</string>
+    <string name="btn_enable_all_cover">Enable all</string>
+    <string name="btn_apply_saved_cover">Apply after reboot</string>
+    <string name="btn_disable_all_cover">Disable all</string>
+    <string name="check_scale_optimizations">Optimize scaling (calculator, contacts)</string>
+    <string name="cover_screen_app_enabled">%1$s: outer screen enabled</string>
+    <string name="cover_screen_app_disabled">%1$s: outer screen disabled</string>
+    <string name="app_count_cover">%1$d apps (%2$d on outer screen)</string>
+    <string name="batch_enabling">Enabling on outer screen (%1$d apps)…</string>
+    <string name="batch_enabling_progress">Enabling permissions: %1$d / %2$d</string>
+    <string name="batch_enable_success">Enabled outer screen permissions for %1$d apps!</string>
+    <string name="batch_applying_saved">Restoring permissions (%1$d apps)…</string>
+    <string name="batch_applying_progress">Restoring permissions: %1$d / %2$d</string>
+    <string name="batch_apply_saved_empty">No saved apps to restore. Use \'Enable all\' or toggle apps from the list.</string>
+    <string name="batch_apply_saved_success">Restored permissions for %1$d apps after reboot!</string>
+    <string name="batch_disabling">Disabling outer screen apps…</string>
+    <string name="batch_disabling_progress">Disabling permissions: %1$d / %2$d</string>
+    <string name="batch_disable_success">Disabled outer screen permissions for %1$d apps.</string>
+
+    <!-- App list & search -->
+    <string name="search_hint">Search app or package name…</string>
+    <string name="show_system_apps">Show system apps</string>
+    <string name="no_apps_found">No applications found</string>
+    <string name="error_loading_apps">Error retrieving apps: %1$s</string>
+
+    <!-- Toolbar Menu -->
+    <string name="menu_continuity_db">ContinuityProvider Database</string>
+    <string name="menu_help">How it works</string>
+
+    <!-- Database dialog -->
+    <string name="db_dialog_title">ContinuityProvider Database</string>
+    <string name="db_loading_records">Loading database records…</string>
+    <string name="db_summary">Total records: %1$d (%2$d active, %3$d disabled)</string>
+    <string name="db_empty_message">ContinuityProvider database is empty.\n(No entries in packages table)</string>
+    <string name="btn_clear_disabled_db">Clear disabled</string>
+    <string name="db_badge_active">enable=1 (Active)</string>
+    <string name="db_badge_disabled">enable=0 (Disabled)</string>
+    <string name="db_delete_confirm_title">Delete database record?</string>
+    <string name="db_delete_confirm_msg">App: %1$s\nPackage: %2$s\nState: %3$s\n\nThis record will be permanently removed from the packages table in ContinuityProvider.</string>
+    <string name="db_delete_btn">Delete permanently</string>
+    <string name="db_delete_success">Deleted record: %1$s</string>
+    <string name="db_clear_disabled_title">Delete disabled records?</string>
+    <string name="db_clear_disabled_msg">Found %1$d disabled records (enable=0). Active apps (e.g. YouTube) will remain untouched.\n\nDelete all disabled records?</string>
+    <string name="db_clear_disabled_btn">Clear (%1$d)</string>
+    <string name="db_clear_disabled_none">No disabled records (enable=0) to delete.</string>
+    <string name="db_clear_disabled_success">Deleted %1$d disabled records from database.</string>
+
+    <!-- Onboarding / Guide -->
+    <string name="guide_title">How it works</string>
+    <string name="guide_subtitle">Follow these 3 simple steps to configure your Xiaomi MIX Flip:</string>
+    <string name="guide_step1_title">Step 1: Shizuku (Required)</string>
+    <string name="guide_step1_desc">Shizuku must be running and authorized for Flip Continuity Manager. It provides secure ADB shell permissions (UID 2000) to communicate with HyperOS without needing root.</string>
+    <string name="guide_step2_title">Step 2: Outer Cover Screen (Tab 2)</string>
+    <string name="guide_step2_desc">Before an application can run on the cover screen, it MUST be allowed in the \'Outer Screen\' tab (use \'Enable all\' or toggle individual apps).\n\n⚠️ Note: HyperOS resets this in-memory list on phone reboot. If apps stop launching on the outer screen after restarting your device, simply open this app and tap \'Apply after reboot\'!</string>
+    <string name="guide_step3_title">Step 3: Flip Continuity (Tab 1)</string>
+    <string name="guide_step3_desc">Ensure \'Global Continuity\' is enabled at the top, then turn on switches for the apps you want to seamlessly continue playing or working after closing the flip.</string>
+    <string name="guide_btn_got_it">Got it!</string>
+</resources>
