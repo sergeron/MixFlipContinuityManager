@@ -4,7 +4,7 @@
 
 ---
 
-## 🌟 Key Features
+## Key Features
 
 1. **Flip Continuity Manager (Tab 1)**
    - Toggle HyperOS **Global Continuity** (`flip_continuity_enabled`).
@@ -30,7 +30,7 @@
 
 ---
 
-## 📋 Requirements
+## Requirements
 
 - **Device**: Xiaomi MIX Flip (`ruyi`) running Xiaomi HyperOS (Android 14+).
 - **Shizuku**: Running and authorized for Mix Flip Continuity Manager.
@@ -39,7 +39,7 @@
 
 ---
 
-## 🚀 Quick Start Guide
+## Quick Start Guide
 
 ### Step 1: Start Shizuku
 1. Open the **Shizuku** app and start the service (via Wireless Debugging or root).
@@ -57,14 +57,14 @@
 
 ---
 
-## 🛠️ How It Works (Technical Details)
+## How It Works (Technical Details)
 
 - **Cover Screen Support**: HyperOS restricts apps from launching on the secondary outer display via `miui.app.MiuiFreeFormManager.setSmallWindowAppAllowedList`. Mix Flip Continuity Manager invokes this API through Shizuku's shell bridge and records allowed packages into local preferences.
 - **App Continuity Persistence**: Xiaomi Settings stores continuity choices in an internal SQLite database exposed via `content://com.android.settings.continuity.ContinuityProvider`. Mix Flip Continuity Manager includes a standalone Java bridge executed via `app_process` (UID 2000) to directly perform queries, inserts, and deletions without requiring root access.
 
 ---
 
-## 📥 Installation
+## Installation
 
 The easiest way to get Mix Flip Continuity Manager is using the pre-compiled APK:
 
@@ -75,7 +75,7 @@ The easiest way to get Mix Flip Continuity Manager is using the pre-compiled APK
 
 ---
 
-## 🏗️ Building from Source
+## Building from Source
 
 To build the APK locally:
 
